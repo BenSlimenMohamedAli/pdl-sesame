@@ -115,7 +115,7 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 								<div class="d-navigation">
 									<ul id="side-menu">
 										<li class="active"><a href="dashboard.php"><i class="ti-dashboard"></i>Dashboard</a></li>
-										<li><a href="my-profile.html"><i class="ti-heart"></i>My Profile</a></li>
+										<li><a href="my-profile.php"><i class="ti-heart"></i>My Profile</a></li>
 										<?php
 											if($_SESSION['role'] == 1){
 												echo '<li class="dropdown">';

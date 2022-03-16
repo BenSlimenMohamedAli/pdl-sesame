@@ -17,7 +17,7 @@ $img = md5(date('Y-m-d H:i:s:u')).".".$extention[1];
 if(move_uploaded_file($tmp_name_vid, $path_vid.$vid) && move_uploaded_file($tmp_name_img, $path_img.$img)){
     $query = $conn->query("INSERT INTO courses VALUES('','$title','$owner','$duration','$category','$desc','$img','$vid')");
     if($query){
-        header("Location: ../../LMS/add-course.html");
+        header("Location: ../../LMS/add-course.php");
     }else{
         echo "error";
     }

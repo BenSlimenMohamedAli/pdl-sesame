@@ -114,7 +114,7 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 								<div class="d-navigation">
 									<ul id="side-menu">
 										<li class="active"><a href="dashboard.php"><i class="ti-dashboard"></i>Dashboard</a></li>
-										<li><a href="my-profile.html"><i class="ti-heart"></i>My Profile</a></li>
+										<li><a href="my-profile.php"><i class="ti-heart"></i>My Profile</a></li>
 										<?php
 											if($_SESSION['role'] == 1){
 												echo '<li class="dropdown">';
@@ -194,200 +194,64 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 										<div class="dashboard_container_body">
 											
 											<!-- Single Course -->
-											<div class="dashboard_single_course">
-												<div class="dashboard_single_course_thumb">
-													<img src="assets/img/c1.png" class="img-fluid" alt="" />
-													<div class="dashboard_action">
-														<a href="#" class="btn btn-ect">Edit</a>
-														<a href="#" class="btn btn-ect">View</a>
-													</div>
-												</div>
-												<div class="dashboard_single_course_caption">
-													<div class="dashboard_single_course_head">
-														<div class="dashboard_single_course_head_flex">
-															<span class="dashboard_instructor">Adam Wilson</span>
-															<h4 class="dashboard_course_title">Introduction Web Design with HTML</h4>
-															<div class="dashboard_rats">
-																<div class="dashboard_rating">
-																	<i class="ti-star filled"></i>
-																	<i class="ti-star filled"></i>
-																	<i class="ti-star filled"></i>
-																	<i class="ti-star filled"></i>
-																	<i class="ti-star"></i>
-																</div>
-																<span>(40 Reviews)</span>
-															</div>
-														</div>
-														<div class="dc_head_right">
-															<h4 class="dc_price_rate theme-cl">$00.00</h4>
-														</div>
-													</div>
-													<div class="dashboard_single_course_des">
-														<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-													</div>
-													<div class="dashboard_single_course_progress">
-														<div class="dashboard_single_course_progress_1">
-															<label>82% Completed</label>
-															<div class="progress">
-																<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-															</div>
-														</div>
-														<div class="dashboard_single_course_progress_2">
-															<ul class="m-0">
-																<li class="list-inline-item"><i class="ti-user mr-1"></i>4512 Enrolled</li>
-																<li class="list-inline-item"><i class="ti-comment-alt mr-1"></i>112 Comments</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
+                                            <?php 
+                                                require_once '../backend/courseController/showCourses.php';
+                                                while($result = $query->fetch()){
+                                                    echo '
+                                                    <div class="dashboard_single_course">
+                                                    <div class="dashboard_single_course_thumb">
+                                                        <img src="../backend/courseController/images/'.$result['image'].'" class="img-fluid" alt="" />
+                                                        <div class="dashboard_action">
+                                                            <a href="../backend/courseController/deleteCourse.php?id='.$result['course_id'].'" class="btn btn-outline-danger" data-mdb-ripple-color="dark">Delete</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="dashboard_single_course_caption">
+                                                        <div class="dashboard_single_course_head">
+                                                            <div class="dashboard_single_course_head_flex">
+                                                                <span class="dashboard_instructor"><h3>'.$result['course_owner'].'</h3></span>
+                                                                <h5 class="dashboard_course_title">'.$result['course_title'].'</h5>
+                                                                <div class="dashboard_rats">
+                                                                    <div class="dashboard_rating">
+                                                                        <i class="ti-star filled"></i>
+                                                                        <i class="ti-star filled"></i>
+                                                                        <i class="ti-star filled"></i>
+                                                                        <i class="ti-star filled"></i>
+                                                                        <i class="ti-star"></i>
+                                                                    </div>
+                                                                    <span>(40 Reviews)</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dc_head_right">
+                                                                <h4 class="dc_price_rate theme-cl">$00.00</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dashboard_single_course_des">
+                                                            <p>'.$result['course_description'].'</p>
+                                                        </div>
+                                                        <div class="dashboard_single_course_progress">
+                                                            <div class="dashboard_single_course_progress_1">
+                                                                <label>82% Completed</label>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dashboard_single_course_progress_2">
+                                                                <ul class="m-0">
+                                                                    <li class="list-inline-item"><i class="ti-user mr-1"></i>4512 Enrolled</li>
+                                                                    <li class="list-inline-item"><i class="ti-comment-alt mr-1"></i>112 Comments</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>';
+                                                }
+                                               
+                                            ?>
 											
-											<!-- Single Course -->
-											<div class="dashboard_single_course">
-												<div class="dashboard_single_course_thumb">
-													<img src="assets/img/c2.png" class="img-fluid" alt="" />
-													<div class="dashboard_action">
-														<a href="#" class="btn btn-ect">Edit</a>
-														<a href="#" class="btn btn-ect">View</a>
-													</div>
-												</div>
-												<div class="dashboard_single_course_caption">
-													<div class="dashboard_single_course_head">
-														<div class="dashboard_single_course_head_flex">
-															<span class="dashboard_instructor">Shaurya Preet</span>
-															<h4 class="dashboard_course_title">Introduction Full About Advance PHP</h4>
-															<div class="dashboard_rats">
-																<div class="dashboard_rating">
-																	<i class="ti-star filled"></i>
-																	<i class="ti-star filled"></i>
-																	<i class="ti-star filled"></i>
-																	<i class="ti-star filled"></i>
-																	<i class="ti-star"></i>
-																</div>
-																<span>(44 Reviews)</span>
-															</div>
-														</div>
-														<div class="dc_head_right">
-															<h4 class="dc_price_rate theme-cl">$00.00</h4>
-														</div>
-													</div>
-													<div class="dashboard_single_course_des">
-														<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-													</div>
-													<div class="dashboard_single_course_progress">
-														<div class="dashboard_single_course_progress_1">
-															<label>90% Completed</label>
-															<div class="progress">
-																<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-															</div>
-														</div>
-														<div class="dashboard_single_course_progress_2">
-															<ul class="m-0">
-																<li class="list-inline-item"><i class="ti-user mr-1"></i>5412 Enrolled</li>
-																<li class="list-inline-item"><i class="ti-comment-alt mr-1"></i>72 Comments</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
 											
-											<!-- Single Course -->
-											<div class="dashboard_single_course">
-												<div class="dashboard_single_course_thumb">
-													<img src="assets/img/c3.png" class="img-fluid" alt="" />
-													<div class="dashboard_action">
-														<a href="#" class="btn btn-ect">Edit</a>
-														<a href="#" class="btn btn-ect">View</a>
-													</div>
-												</div>
-												<div class="dashboard_single_course_caption">
-													<div class="dashboard_single_course_head">
-														<div class="dashboard_single_course_head_flex">
-															<span class="dashboard_instructor">Krish Wilson</span>
-															<h4 class="dashboard_course_title">Full WordPress Development Package</h4>
-															<div class="dashboard_rats">
-																<div class="dashboard_rating">
-																	<i class="ti-star filled"></i>
-																	<i class="ti-star filled"></i>
-																	<i class="ti-star filled"></i>
-																	<i class="ti-star filled"></i>
-																	<i class="ti-star"></i>
-																</div>
-																<span>(57 Reviews)</span>
-															</div>
-														</div>
-														<div class="dc_head_right">
-															<h4 class="dc_price_rate theme-cl">$00.00</h4>
-														</div>
-													</div>
-													<div class="dashboard_single_course_des">
-														<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-													</div>
-													<div class="dashboard_single_course_progress">
-														<div class="dashboard_single_course_progress_1">
-															<label>95% Completed</label>
-															<div class="progress">
-																<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-															</div>
-														</div>
-														<div class="dashboard_single_course_progress_2">
-															<ul class="m-0">
-																<li class="list-inline-item"><i class="ti-user mr-1"></i>6587 Enrolled</li>
-																<li class="list-inline-item"><i class="ti-comment-alt mr-1"></i>365 Comments</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
 											
-											<!-- Single Course -->
-											<div class="dashboard_single_course">
-												<div class="dashboard_single_course_thumb">
-													<img src="assets/img/c4.png" class="img-fluid" alt="" />
-													<div class="dashboard_action">
-														<a href="#" class="btn btn-ect">Edit</a>
-														<a href="#" class="btn btn-ect">View</a>
-													</div>
-												</div>
-												<div class="dashboard_single_course_caption">
-													<div class="dashboard_single_course_head">
-														<div class="dashboard_single_course_head_flex">
-															<span class="dashboard_instructor">Adam Wilson</span>
-															<h4 class="dashboard_course_title">Introduction Magento Advance Code</h4>
-															<div class="dashboard_rats">
-																<div class="dashboard_rating">
-																	<i class="ti-star filled"></i>
-																	<i class="ti-star filled"></i>
-																	<i class="ti-star filled"></i>
-																	<i class="ti-star filled"></i>
-																	<i class="ti-star"></i>
-																</div>
-																<span>(30 Reviews)</span>
-															</div>
-														</div>
-														<div class="dc_head_right">
-															<h4 class="dc_price_rate theme-cl">$00.00</h4>
-														</div>
-													</div>
-													<div class="dashboard_single_course_des">
-														<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-													</div>
-													<div class="dashboard_single_course_progress">
-														<div class="dashboard_single_course_progress_1">
-															<label>70% Completed</label>
-															<div class="progress">
-																<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-															</div>
-														</div>
-														<div class="dashboard_single_course_progress_2">
-															<ul class="m-0">
-																<li class="list-inline-item"><i class="ti-user mr-1"></i>6582 Enrolled</li>
-																<li class="list-inline-item"><i class="ti-comment-alt mr-1"></i>65 Comments</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
+										
 											
 										</div>
 									</div>
