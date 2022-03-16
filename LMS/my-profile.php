@@ -123,6 +123,7 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 												echo '<a href="#"><i class="ti-user"></i>Admin<span class="ti-angle-left"></span></a>';
 												echo '<ul class="nav nav-second-level">';
 												echo '<li><a href="add-course.php"><i class="ti-plus"></i>Add Course</a></li>';
+												echo '<li><a href="update-course.php"><i class="ti-eraser"></i>Update Course</a></li>';
 												echo '<li><a href="delete-course.php"><i class="ti-trash"></i>Delete Course</a></li>';
 												echo '<li><a href="feedbacks.php"><i class="ti-microphone"></i>Feedbacks</a></li>';
 												

@@ -26,7 +26,6 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 		<style>
 			.circular--portrait { margin-left: 150px;position: relative; width: 110px; height: 110px;transform: scale(1.5); overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }
 		</style>
-		
     </head>
 	
     <body class="darkblue-skin">
@@ -125,8 +124,8 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 												echo '<a href="#"><i class="ti-user"></i>Admin<span class="ti-angle-left"></span></a>';
 												echo '<ul class="nav nav-second-level">';
 												echo '<li><a href="add-course.php"><i class="ti-plus"></i>Add Course</a></li>';
-												echo '<li><a href="update-course.php"><i class="ti-eraser"></i>Update Course</a></li>';
-												echo '<li class="active"><a href="delete-course.php"><i class="ti-trash"></i>Delete Course</a></li>';
+                                                echo '<li class="active"><a href="update-course.php"><i class="ti-eraser"></i>Update Course</a></li>';
+												echo '<li><a href="delete-course.php"><i class="ti-trash"></i>Delete Course</a></li>';
 												echo '<li><a href="feedbacks.php"><i class="ti-microphone"></i>Feedbacks</a></li>';
 												
 												echo '</ul>';
@@ -165,7 +164,7 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 									<nav aria-label="breadcrumb">
 										<ol class="breadcrumb">
 											<li class="breadcrumb-item"><a href="index.php">Home</a></li>
-											<li class="breadcrumb-item active" aria-current="page">Delete Courses</li>
+											<li class="breadcrumb-item active" aria-current="page">Update Courses</li>
 										</ol>
 									</nav>
 								</div>
@@ -207,7 +206,7 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
                                                     <div class="dashboard_single_course_thumb">
                                                         <img src="../backend/courseController/images/'.$result['image'].'" class="img-fluid" alt="" />
                                                         <div class="dashboard_action">
-                                                            <a href="../backend/courseController/deleteCourse.php?id='.$result['course_id'].'" class="btn btn-outline-danger" data-mdb-ripple-color="dark">Delete</a>
+                                                            <a href="patch-course.php?id='.$result['course_id'].'" class="btn btn-warning" data-mdb-ripple-color="dark">Update</a>
                                                             
                                                         </div>
                                                     </div>
