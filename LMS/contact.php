@@ -106,7 +106,7 @@ require_once '../backend/config.php';
 										<a href="dashboard.php">Dashboard</a>
 									</li>
 									<li class="login_click theme-bg">
-										<a href="login.php">Log Out</a>
+										<a href="../backend/userController/logoutUser.php">Log Out</a>
 									</li>
 								</ul>
 							</div>

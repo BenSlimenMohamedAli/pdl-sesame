@@ -104,7 +104,7 @@ require_once '../backend/config.php';
 										<a href="dashboard.php">Dashboard</a>
 									</li>
 									<li class="login_click theme-bg">
-										<a href="login.php">Log Out</a>
+										<a href="../backend/userController/logoutUser.php">Log Out</a>
 									</li>
 								</ul>
 							</div>
@@ -283,8 +283,8 @@ require_once '../backend/config.php';
 									
 									<div class="education_block_footer">
 										<div class="education_block_author">
-											<div class="path-img"><a href="#"><img src="assets/img/user.jpg" class="img-fluid" alt=""></a></div>
-											<h5><a href="#">'.$result['course_owner'].'</a></h5>
+											<div class="path-img"><a href="#"><img src="" class="img-fluid" alt=""></a></div>
+											<h4><i class="ti-briefcase"></h4></i><h5>&nbsp&nbsp&nbsp&nbsp'.$result['course_owner'].'</h5>
 										</div>
 										<span class="education_block_time"><i class="ti-time mr-1"></i>'.$result['course_duration'].' Min</span>
 									</div>
