@@ -126,11 +126,11 @@ require_once '../backend/config.php';
 						<div class="col-lg-12 col-md-12">
 							
 							<div class="breadcrumbs-wrap">
-								<h1 class="breadcrumb-title">Find Courses</h1>
+								<h1 class="breadcrumb-title">Our Courses</h1>
 								<nav aria-label="breadcrumb">
 									<ol class="breadcrumb">
-										<li class="breadcrumb-item"><a href="#">Home</a></li>
-										<li class="breadcrumb-item active" aria-current="page">Find Courses</li>
+										<li class="breadcrumb-item"><a href="index.php">Home</a></li>
+										<li class="breadcrumb-item active" aria-current="page">Our Courses</li>
 									</ol>
 								</nav>
 							</div>
@@ -271,9 +271,15 @@ require_once '../backend/config.php';
 									
 									<div class="education_block_thumb">
 										<a href="#"><img src="../backend/courseController/images/'.$result['image'].'" width="370" height="217"  alt=""></a>
-										<div class="cources_price">FREE</div>
-										<div class="education_ratting"><i class="fa fa-star"></i>4.8 (62)</div>
-									</div>
+										<div class="cources_price">FREE</div>';
+										if(!isset($_SESSION['logged']) || $_SESSION['logged'] != true){
+											echo '<div class="education_ratting"><a href="login.php">Login to watch</a></div>';
+											
+										}else{
+											echo '<div class="education_ratting"><a href="">Watch Course</a></div>';
+										}
+										
+									echo '</div>
 									
 									<div class="education_block_body">
 										<h3 class="bl-title">'.$result['course_title'].'</h3>

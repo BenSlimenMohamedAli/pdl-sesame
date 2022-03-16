@@ -131,8 +131,8 @@ require_once '../backend/config.php';
 								<h1 class="breadcrumb-title">Get in Touch</h1>
 								<nav aria-label="breadcrumb">
 									<ol class="breadcrumb">
-										<li class="breadcrumb-item"><a href="#">Home</a></li>
-										<li class="breadcrumb-item active" aria-current="page">Contact</li>
+										<li class="breadcrumb-item"><a href="index.php">Home</a></li>
+										<li class="breadcrumb-item active" aria-current="page">Get In Touch</li>
 									</ol>
 								</nav>
 							</div>

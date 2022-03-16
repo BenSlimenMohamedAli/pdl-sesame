@@ -2,6 +2,9 @@
 require_once '../backend/config.php';
 if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 	header('Location: login.php');
+}else if($_SESSION['role'] != 1){
+  session_destroy();
+  header('Location: login.php');
 }
 ?>
 <!DOCTYPE html>

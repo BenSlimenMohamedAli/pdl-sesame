@@ -22,6 +22,7 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 		<link href="assets/css/colors.css" rel="stylesheet">
 		<style>
 			.circular--portrait { margin-left: 150px;position: relative; width: 110px; height: 110px;transform: scale(1.5); overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }
+			.img_profile {margin-left: 40px; width:97px; height:98px;position: relative;transform: scale(1.5);overflow: hidden; border-radius: 50%; }
 		</style>
 		
     </head>
@@ -114,8 +115,8 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 								
 								<div class="d-navigation">
 									<ul id="side-menu">
-										<li class="active"><a href="dashboard.php"><i class="ti-dashboard"></i>Dashboard</a></li>
-										<li><a href="my-profile.php"><i class="ti-heart"></i>My Profile</a></li>
+										<li><a href="dashboard.php"><i class="ti-dashboard"></i>Dashboard</a></li>
+										<li class="active"><a href="my-profile.php"><i class="ti-heart"></i>My Profile</a></li>
 										<?php
 											if($_SESSION['role'] == 1){
 												echo '<li class="dropdown">';
@@ -173,24 +174,33 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 								<div class="col-lg-12 col-md-12 col-sm-12">
 									<div class="dashboard_container">
 										<div class="dashboard_container_body p-4">
+											
 											<div class="viewer_detail_wraps">
-												<div class="viewer_detail_thumb">
-													<img src="assets/img/user.jpg" class="img-fluid" alt="" />
-													<div class="viewer_status">pro</div>
+												<div class="">
+													
+													<div class="viewer_status">
+														<?php 
+															if($_SESSION['role'] == 1){
+																echo "Admin";
+															}else{
+																echo "Student";
+															}
+														?>
+													</div>
 												</div>
 												<div class="caption">
-													<div class="viewer_package_status">Expire in 5 Days</div>
+													<div class="viewer_package_status" style="margin-left: 30px;">Expire in 5 Days</div>
 													<div class="viewer_header">
-														<h4>Yassine Karrech</h4>
-														<span class="viewer_location">Tunis, Tunisia</span>
-														<ul>
+														<h4 style="margin-left: 30px;"><?php echo $_SESSION['firstname']." ".$_SESSION['lastname'] ?></h4>
+														<span class="viewer_location" style="margin-left: 30px;">Tunis, Tunisia</span>
+														<ul style="margin-left: 30px;">
 															<li><strong>112</strong> Points</li>
 															<li><strong>10</strong> Classes Completed</li>
 															<li><strong>18</strong> Lessions Completed</li>
 														</ul>
 													</div>
 													<div class="viewer_header">
-														<ul class="badge_info">
+														<ul class="badge_info" style="margin-left: 30px;">
 															<li class="started"><i class="ti-rocket"></i></li>
 															<li class="medium"><i class="ti-cup"></i></li>
 															<li class="platinum"><i class="ti-thumb-up"></i></li>
