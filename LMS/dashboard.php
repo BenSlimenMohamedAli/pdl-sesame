@@ -114,15 +114,17 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 								
 								<div class="d-navigation">
 									<ul id="side-menu">
-										<li class="active"><a href="dashboard.php"><i class="ti-user"></i>Dashboard</a></li>
+										<li class="active"><a href="dashboard.php"><i class="ti-dashboard"></i>Dashboard</a></li>
 										<li><a href="my-profile.html"><i class="ti-heart"></i>My Profile</a></li>
 										<?php
 											if($_SESSION['role'] == 1){
 												echo '<li class="dropdown">';
-												echo '<a href="#"><i class="ti-layers"></i>Admin<span class="ti-angle-left"></span></a>';
+												echo '<a href="#"><i class="ti-user"></i>Admin<span class="ti-angle-left"></span></a>';
 												echo '<ul class="nav nav-second-level">';
-												echo '<li><a href="add-course.html"><i class="ti-plus"></i>Add Course</a></li>';
-												echo '<li><a href="feedbacks.php"><i class="ti-comment-alt"></i>Feedbacks</a></li>';
+												echo '<li><a href="add-course.php"><i class="ti-plus"></i>Add Course</a></li>';
+												echo '<li><a href="delete-course.php"><i class="ti-trash"></i>Delete Course</a></li>';
+												echo '<li><a href="feedbacks.php"><i class="ti-microphone"></i>Feedbacks</a></li>';
+												
 												echo '</ul>';
 												echo '</li>';
 											}

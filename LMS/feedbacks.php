@@ -82,31 +82,28 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 			<!-- ============================================================== -->
 		
            <!-- ============================ Page Title Start================================== -->
-			<section class="page-title">
+		   
+		   <section class="page-title"> 
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 col-md-12">
 							
 							<div class="breadcrumbs-wrap">
-								<h1 class="breadcrumb-title">Get in Touch</h1>
-								<nav aria-label="breadcrumb">
-									<ol class="breadcrumb">
-										<li class="breadcrumb-item"><a href="#">Home</a></li>
-										<li class="breadcrumb-item active" aria-current="page">Contact</li>
-									</ol>
-								</nav>
+								<h1 class="breadcrumb-title">Received Feedbacks</h1>
+								
 							</div>
 							
 						</div>
 					</div>
 				</div>
 			</section>
+			
 			<!-- ============================ Page Title End ================================== -->	
 			
 			<!-- ============================ Agency List Start ================================== -->
 			<section class="bg-light">
 			
-				<div class="container">
+				<div style="margin-left: 550px"class="container">
 				
 					<!-- row Start -->
 					<div class="row">
@@ -173,55 +170,6 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 											
 						</div>
 						
-						<div class="col-lg-4 col-md-5">
-						
-							<div class="prc_wrap">
-								
-								<div class="prc_wrap_header">
-									<h4 class="property_block_title">Reach Us</h4>
-								</div>
-								
-								<div class="prc_wrap-body">
-									<div class="contact-info">
-								
-										<h2>Get In Touch</h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-										
-										<div class="cn-info-detail">
-											<div class="cn-info-icon">
-												<i class="ti-home"></i>
-											</div>
-											<div class="cn-info-content">
-												<h4 class="cn-info-title">Reach Us</h4>
-												Z.I Chotrana II <br>Pôle Technologique Elgazala<br>2088 Ariana, Tunisie.
-											</div>
-										</div>
-										
-										<div class="cn-info-detail">
-											<div class="cn-info-icon">
-												<i class="ti-email"></i>
-											</div>
-											<div class="cn-info-content">
-												<h4 class="cn-info-title">Drop A Mail</h4>
-												support@tek-up.de<br>info@tek-up.de
-											</div>
-										</div>
-										
-										<div class="cn-info-detail">
-											<div class="cn-info-icon">
-												<i class="ti-mobile"></i>
-											</div>
-											<div class="cn-info-content">
-												<h4 class="cn-info-title">Call Us</h4>
-												(216) 23 456 789<br>+216 12 345 678
-											</div>
-										</div>
-										
-									</div>
-								</div>
-							</div>
-							
-						</div>
 						
 					</div>
 					<!-- /row -->		

@@ -234,7 +234,12 @@ require_once '../backend/config.php';
 							<!-- Row -->
 							<div class="row align-items-center mb-3">
 								<div class="col-lg-6 col-md-6 col-sm-12">
-									We found <strong>142</strong> courses for you
+									<?php
+									require_once '../backend/courseController/showCourses.php';
+									$count = $query->rowCount();
+									echo 'We found <strong>'.$count.'</strong> courses for you'
+									?>
+									
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 ordering">
 									<div class="filter_wraps">
@@ -260,8 +265,6 @@ require_once '../backend/config.php';
 							
 							<div class="row">
 								<?php
-								
-								require_once '../backend/courseController/showCourses.php';
 								while($result = $query->fetch()){
 									echo'<div class="col-lg-4 col-md-6">
 								<div class="education_block_grid">
