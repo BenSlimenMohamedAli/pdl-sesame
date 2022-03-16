@@ -1,6 +1,9 @@
 <?php
 require_once '../config.php';
 $id = $_GET['id'];
+if($id == null){
+    header('Location: ../../LMS/update-course.php');
+}
 
 $title = $_POST['title'];
 $owner = $_POST['owner'];
