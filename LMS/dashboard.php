@@ -134,7 +134,7 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 										
 										<li><a href="saved-courses.html"><i class="ti-heart"></i>Saved Courses</a></li>
 										<li class="dropdown">
-											<a href="all-courses.html"><i class="ti-layers"></i>All Courses<span class="ti-angle-left"></span></a>
+											
 											<ul class="nav nav-second-level">
 												<li><a href="all-courses.html">All</a></li>
 												<li><a href="javascript:void(0);">Published</a></li>

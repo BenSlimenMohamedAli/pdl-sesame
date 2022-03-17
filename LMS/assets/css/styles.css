@@ -46,6 +46,8 @@
 /*------------------------------------
 	Preloader
 ------------------------------------*/
+
+
 .preloader {
   background-color: #ffffff;
   background-image: url("../img/loader.svg");

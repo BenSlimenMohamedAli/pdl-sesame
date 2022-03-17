@@ -188,10 +188,10 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
         <div id="cid_7" class="form-input-wide" data-layout="half">
           <select class="form-dropdown" id="input_7" name="category" style="width:310px" data-component="dropdown">
             <option value=""> Please Select </option>
-            <option value="Networking"> Networking </option>
-            <option value="Develepment"> Develepment </option>
-            <option value="Security"> Security </option>
-            <option value="Soft Skills"> Soft Skills </option>
+            <option value="networking"> Networking </option>
+            <option value="development"> Develepment </option>
+            <option value="security"> Security </option>
+            <option value="soft-skills"> Soft Skills </option>
             
           </select>
         </div>

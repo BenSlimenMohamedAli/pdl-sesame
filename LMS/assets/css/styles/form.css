@@ -1,6 +1,9 @@
 /*
  *Form CSS
  */
+
+
+ 
 .form-all {
     list-style: none;
     list-style-position: outside;
@@ -17,6 +20,8 @@
   height: 1px;
   margin: 5px 0;
 }
+
+
 
 .form-captcha {
     border: 1px solid #ccc;

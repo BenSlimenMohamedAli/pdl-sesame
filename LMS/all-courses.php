@@ -1,3 +1,9 @@
+<?php
+require_once '../backend/config.php';
+if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
+	header('Location: login.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 	
@@ -14,7 +20,9 @@
 		
 		<!-- Custom Color Option -->
 		<link href="assets/css/colors.css" rel="stylesheet">
-		
+		<style>
+			.circular--portrait { margin-left: 150px;position: relative; width: 110px; height: 110px;transform: scale(1.5); overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }
+		</style>
     </head>
 	
     <body class="darkblue-skin">
@@ -82,24 +90,52 @@
 					<div class="row">
 					
 						<div class="col-lg-3 col-md-3">
-							<div class="dashboard-navbar">
-								
-								<div class="d-user-avater">
-									<img src="assets/img/user.jpg" class="img-fluid avater" alt="">
-									<h4>Adam Harshvardhan</h4>
-									<span>Tunisia TUN</span>
+						<div class="dashboard-navbar">
+								<br>
+								<div class="circular--portrait">
+									<img src="../backend/userController/images/<?php echo $_SESSION['image']; ?>" class="img-fluid avater" alt="">
+									</div>
+									<br>
+									<div class="d-user-avater">
+									<h4><?php echo $_SESSION["firstname"]." ".$_SESSION["lastname"]; ?></h4>
+									<span>
+										<b>Role : </b>
+										<?php 
+										if($_SESSION["role"] == 0){
+											echo "Student";
+										}else{
+											echo "Admin";
+										}
+										?>
 								</div>
+								</span>
+								
 								
 								<div class="d-navigation">
 									<ul id="side-menu">
-										<li><a href="dashboard.php"><i class="ti-user"></i>Dashboard</a></li>
+										<li class="active"><a href="dashboard.php"><i class="ti-dashboard"></i>Dashboard</a></li>
 										<li><a href="my-profile.php"><i class="ti-heart"></i>My Profile</a></li>
-										<li><a href="add-course.php"><i class="ti-plus"></i>Add Course</a></li>
+										<?php
+											if($_SESSION['role'] == 1){
+												echo '<li class="dropdown">';
+												echo '<a href="#"><i class="ti-user"></i>Admin<span class="ti-angle-left"></span></a>';
+												echo '<ul class="nav nav-second-level">';
+												echo '<li><a href="add-course.php"><i class="ti-plus"></i>Add Course</a></li>';
+												echo '<li><a href="update-course.php"><i class="ti-eraser"></i>Update Course</a></li>';
+												echo '<li><a href="delete-course.php"><i class="ti-trash"></i>Delete Course</a></li>';
+												echo '<li><a href="feedbacks.php"><i class="ti-microphone"></i>Feedbacks</a></li>';
+												
+												
+												echo '</ul>';
+												echo '</li>';
+											}
+										?>
+										
 										<li><a href="saved-courses.html"><i class="ti-heart"></i>Saved Courses</a></li>
-										<li class="dropdown active">
-											<a href="all-courses.html"><i class="ti-layers"></i>All Courses<span class="ti-angle-left"></span></a>
+										<li class="dropdown">
+											<a href="all-courses.php"><i class="ti-layers"></i>All Courses<span class="ti-angle-left"></span></a>
 											<ul class="nav nav-second-level">
-												<li><a href="all-courses.html">All</a></li>
+												<li><a href="all-courses.php">All</a></li>
 												<li><a href="javascript:void(0);">Published</a></li>
 												<li><a href="javascript:void(0);">Pending</a></li>
 												<li><a href="javascript:void(0);">Expired</a></li>
