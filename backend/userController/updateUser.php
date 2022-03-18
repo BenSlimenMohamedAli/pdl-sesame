@@ -28,7 +28,7 @@ if($tmp_name != null){
     header('Location: ../../LMS/settings.php');
 }else{
     $query = $conn->query("UPDATE users 
-    firstname = '$firstname' ,
+    SET firstname = '$firstname' ,
     lastname = '$lastname' , 
     phone = '$phone' , 
     email = '$email' 
