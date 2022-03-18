@@ -135,7 +135,7 @@ $query = $conn->query("SELECT * FROM courses WHERE course_category = '$category'
 											}
 										?>
 										
-										<li><a href="saved-courses.html"><i class="ti-heart"></i>Saved Courses</a></li>
+										<li><a href="#"><i class="ti-heart"></i>Saved Courses</a></li>
 										<li class="dropdown">
 											<a href="all-courses.php"><i class="ti-layers"></i>All Courses<span class="ti-angle-left"></span></a>
 											<ul class="nav nav-second-level">
@@ -146,9 +146,9 @@ $query = $conn->query("SELECT * FROM courses WHERE course_category = '$category'
 												<li><a href="javascript:void(0);">In Draft</a></li>
 											</ul>
 										</li>
-										<li><a href="my-order.html"><i class="ti-shopping-cart"></i>My Order</a></li>
+										<li><a href="#"><i class="ti-shopping-cart"></i>My Order</a></li>
 										<li><a href="settings.php"><i class="ti-settings"></i>Settings</a></li>
-										<li><a href="reviews.html"><i class="ti-comment-alt"></i>Reviews</a></li>
+										<li><a href="#"><i class="ti-comment-alt"></i>Reviews</a></li>
 										<li><a href="../backend/userController/logoutUser.php"><i class="ti-power-off"></i>Log Out</a></li>
 									</ul>
 								</div>

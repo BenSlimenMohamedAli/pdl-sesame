@@ -8,7 +8,7 @@ $email = $_POST['email'];
 $id = $_SESSION['id'];
 
 
-$tmp_name= $_FILES['image']['tmp_name'];
+$tmp_name = $_FILES['image']['tmp_name'];
 
 if($tmp_name != null){
     $path = "images/";
