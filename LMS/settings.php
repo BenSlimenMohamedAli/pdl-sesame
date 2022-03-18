@@ -192,70 +192,73 @@ if (!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true) {
 											<h4>Setup Your Detail</h4>
 										</div>
 									</div>
-									<div class="dashboard_container_body p-4">
-										<!-- Basic info -->
-										<div class="submit-section">
-											<div class="form-row">
-
-												<div class="form-group col-md-6">
-													<label>Your Firstname</label>
-													<?php
-													echo '<input type="text" class="form-control" value="' . $_SESSION['firstname'] . '">';
-													?>
-												</div>
-
-
-
-												<div class="form-group col-md-6">
-													<label>Your Lastname</label>
-													<?php
-													echo '<input type="text" class="form-control" value="' . $_SESSION['lastname'] . '">';
-													?>
-												</div>
-
-												<div class="form-group col-md-6">
-													<label>Email</label>
-													<?php
-													echo '<input type="email" class="form-control" value="' . $_SESSION['email'] . '">';
-													?>
-												</div>
-
-												<div class="form-group col-md-6">
-													<label>Phone</label>
-													<?php
-													echo '<input type="text" class="form-control" value="' . $_SESSION['phone'] . '">';
-													?>
-												</div>
-
-												<div class="form-group col-md-6">
-													<label>Image</label>
-													<input type="file" class="form-control" name="img">
-												</div>
-
-
-
-											</div>
-										</div>
-										<!-- Basic info -->
-
-										<!-- Social Account info -->
-										<div class="form-submit">
-
+									<form action="../backend/userController/updateUser.php" method="POST" enctype="multipart/form-data">
+										<div class="dashboard_container_body p-4">
+											<!-- Basic info -->
 											<div class="submit-section">
 												<div class="form-row">
 
-
-
-													<div class="form-group col-lg-12 col-md-12">
-														<button class="btn btn-theme" type="submit">Save Changes</button>
+													<div class="form-group col-md-6">
+														<label>Your Firstname</label>
+														<?php
+														echo '<input type="text" name="firstname" class="form-control" value="' . $_SESSION['firstname'] . '">';
+														?>
 													</div>
+
+
+
+													<div class="form-group col-md-6">
+														<label>Your Lastname</label>
+														<?php
+														echo '<input type="text" name="lastname" class="form-control" value="' . $_SESSION['lastname'] . '">';
+														?>
+													</div>
+
+													<div class="form-group col-md-6">
+														<label>Email</label>
+														<?php
+														echo '<input type="email" name="email" class="form-control" value="' . $_SESSION['email'] . '">';
+														?>
+													</div>
+
+													<div class="form-group col-md-6">
+														<label>Phone</label>
+														<?php
+														echo '<input type="text" name="phone" class="form-control" value="' . $_SESSION['phone'] . '">';
+														?>
+													</div>
+
+													<div class="form-group col-md-6">
+														<label>Image</label>
+														<input type="file" name="image" class="form-control" name="img">
+													</div>
+
+
 
 												</div>
 											</div>
-										</div>
-										<!-- / Social Account info -->
+											<!-- Basic info -->
 
-									</div>
+											<!-- Social Account info -->
+											<div class="form-submit">
+
+												<div class="submit-section">
+													<div class="form-row">
+
+
+
+														<div class="form-group col-lg-12 col-md-12">
+															<button class="btn btn-theme" type="submit">Save Changes</button>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+											<!-- / Social Account info -->
+
+										</div>
+									</form>
 
 								</div>
 							</div>
