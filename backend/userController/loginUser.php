@@ -9,9 +9,12 @@ $result = $query->fetch();
 if($result){
     if(password_verify($password, $result['password'])){
         $_SESSION['logged'] = true;
+        $_SESSION['id'] = $result['user_id'];
         $_SESSION['firstname'] = $result['firstname'];
         $_SESSION['lastname'] = $result['lastname'];
+        $_SESSION['email'] = $result['email'];
         $_SESSION['role'] = $result['role'];
+        $_SESSION['phone'] = $result['phone'];
         $_SESSION['image'] = $result['image'];
         
         header("Location: ../../LMS/dashboard.php");

@@ -147,7 +147,7 @@ $query = $conn->query("SELECT * FROM courses WHERE course_category = '$category'
 											</ul>
 										</li>
 										<li><a href="my-order.html"><i class="ti-shopping-cart"></i>My Order</a></li>
-										<li><a href="settings.html"><i class="ti-settings"></i>Settings</a></li>
+										<li><a href="settings.php"><i class="ti-settings"></i>Settings</a></li>
 										<li><a href="reviews.html"><i class="ti-comment-alt"></i>Reviews</a></li>
 										<li><a href="../backend/userController/logoutUser.php"><i class="ti-power-off"></i>Log Out</a></li>
 									</ul>
