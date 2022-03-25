@@ -149,7 +149,7 @@ require_once '../backend/config.php';
 										</div>
 										
 										<div class="form-group">
-											<label>Password<a href="forget-password.html" class="elio_right">Forget Password?</a></label>
+											<label>Password<a href="forget-password.php" class="elio_right">Forget Password?</a></label>
 											<input type="password" name="password" class="form-control" placeholder="*******">
 										</div>
 										

@@ -3,7 +3,7 @@ require_once '../config.php';
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 $phone = $_POST['phone'];
-$address = $_POST['address'] . '@tek-up.de';
+$address = $_POST['address'];
 $password = $_POST['password'];
 
 $path = "images/";

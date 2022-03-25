@@ -152,27 +152,16 @@ require_once '../backend/config.php';
 												<label>Phone Number</label>
 												<input type="text" class="form-control" name="phone" placeholder="Enter your phone number">
 											</div>
-
-											<div class="row">
-												<div class="col-lg-6">
-													<div class="form-group">
-														<label>Email Address</label>
-														<input type="text" class="form-control"  name="address" placeholder="Enter email address">
-													</div>
-												</div>
-												
-												<div class="col-lg-6">
-												<div class="form-group">
-													<label>.</label>
-													<input type="text" disabled class="form-control" value="@tek-up.de">
-												</div>
-												</div>
+											<div class="form-group">
+												<label>Email Address</label>
+												<input type="text" class="form-control" name="address" placeholder="Enter email address">
 											</div>
+											
 										
 											
 											<div class="form-group">
 												<label>Password</label>
-												<input type="password" class="form-control" name="password" placeholder="*******">
+												<input type="password" class="form-control" name="password" placeholder="*************">
 											</div>
 
 											<div class="form-group">
