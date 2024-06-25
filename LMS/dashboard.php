@@ -93,8 +93,8 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 						<div class="col-lg-3 col-md-3">
 							<div class="dashboard-navbar">
 								<br>
-								<div class="circular--portrait">
-									<img src="../backend/userController/images/<?php echo $_SESSION['image']; ?>" class="img-fluid avater" alt="">
+								<div>
+									<img style="margin-left:25px;border-radius:50%;width:200px;height:200px;" src="../backend/userController/images/<?php echo $_SESSION['image']; ?>" class="img-fluid avater" alt="">
 									</div>
 									<br>
 									<div class="d-user-avater">
