@@ -24,7 +24,7 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 		<!-- Custom Color Option -->
 		<link href="assets/css/colors.css" rel="stylesheet">
 		<style>
-			.circular--portrait { margin-left: 150px;position: relative; width: 110px; height: 110px;transform: scale(1.5); overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }
+			.circular--portrait { margin-left: 70px;position: relative; width: 110px; height: 110px;transform: scale(1.5); overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }
 		</style>
     </head>
 	
@@ -133,7 +133,6 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 											}
 										?>
 										
-										<li><a href="#"><i class="ti-heart"></i>Saved Courses</a></li>
 										<li class="dropdown">
 											
 											<ul class="nav nav-second-level">
@@ -144,9 +143,7 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 												<li><a href="javascript:void(0);">In Draft</a></li>
 											</ul>
 										</li>
-										<li><a href="#"><i class="ti-shopping-cart"></i>My Order</a></li>
 										<li><a href="settings.php"><i class="ti-settings"></i>Settings</a></li>
-										<li><a href="#"><i class="ti-comment-alt"></i>Reviews</a></li>
 										<li><a href="../backend/userController/logoutUser.php"><i class="ti-power-off"></i>Log Out</a></li>
 									</ul>
 								</div>
@@ -215,38 +212,14 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
                                                             <div class="dashboard_single_course_head_flex">
                                                                 <span class="dashboard_instructor"><h3>'.$result['course_title'].'</h3></span>
                                                                 <h5 class="dashboard_course_title">'.$result['course_owner'].'</h5>
-                                                                <div class="dashboard_rats">
-                                                                    <div class="dashboard_rating">
-                                                                        <i class="ti-star filled"></i>
-                                                                        <i class="ti-star filled"></i>
-                                                                        <i class="ti-star filled"></i>
-                                                                        <i class="ti-star filled"></i>
-                                                                        <i class="ti-star"></i>
-                                                                    </div>
-                                                                    <span>(40 Reviews)</span>
-                                                                </div>
+                                                                
                                                             </div>
-                                                            <div class="dc_head_right">
-                                                                <h4 class="dc_price_rate theme-cl">$00.00</h4>
-                                                            </div>
+                                                            
                                                         </div>
                                                         <div class="dashboard_single_course_des">
                                                             <p>'.$result['course_description'].'</p>
                                                         </div>
-                                                        <div class="dashboard_single_course_progress">
-                                                            <div class="dashboard_single_course_progress_1">
-                                                                <label>82% Completed</label>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dashboard_single_course_progress_2">
-                                                                <ul class="m-0">
-                                                                    <li class="list-inline-item"><i class="ti-user mr-1"></i>4512 Enrolled</li>
-                                                                    <li class="list-inline-item"><i class="ti-comment-alt mr-1"></i>112 Comments</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
+                                                        
                                                     </div>
                                                 </div>';
                                                 }

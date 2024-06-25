@@ -21,7 +21,7 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 		<!-- Custom Color Option -->
 		<link href="assets/css/colors.css" rel="stylesheet">
 		<style>
-			.circular--portrait { margin-left: 150px;position: relative; width: 110px; height: 110px;transform: scale(1.5); overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }
+			.circular--portrait { margin-left: 70px;position: relative; width: 110px; height: 110px;transform: scale(1.5); overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }
 		</style>
 		
     </head>
@@ -93,8 +93,8 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 						<div class="col-lg-3 col-md-3">
 							<div class="dashboard-navbar">
 								<br>
-								<div>
-									<img style="margin-left:25px;border-radius:50%;width:200px;height:200px;" src="../backend/userController/images/<?php echo $_SESSION['image']; ?>" class="img-fluid avater" alt="">
+								<div class="circular--portrait">
+									<img src="../backend/userController/images/<?php echo $_SESSION['image']; ?>" class="img-fluid avater" alt="">
 									</div>
 									<br>
 									<div class="d-user-avater">
@@ -132,7 +132,6 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 											}
 										?>
 										
-										<li><a href="#"><i class="ti-heart"></i>Saved Courses</a></li>
 										<li class="dropdown">
 											
 											<ul class="nav nav-second-level">
@@ -143,9 +142,7 @@ if(!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true){
 												<li><a href="javascript:void(0);">In Draft</a></li>
 											</ul>
 										</li>
-										<li><a href="#"><i class="ti-shopping-cart"></i>My Order</a></li>
 										<li><a href="settings.php"><i class="ti-settings"></i>Settings</a></li>
-										<li><a href="#"><i class="ti-comment-alt"></i>Reviews</a></li>
 										<li><a href="../backend/userController/logoutUser.php"><i class="ti-power-off"></i>Log Out</a></li>
 									</ul>
 								</div>

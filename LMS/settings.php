@@ -23,7 +23,7 @@ if (!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true) {
 	<link href="assets/css/colors.css" rel="stylesheet">
 	<style>
 		.circular--portrait {
-			margin-left: 150px;
+			margin-left: 70px;
 			position: relative;
 			width: 110px;
 			height: 110px;
@@ -145,7 +145,6 @@ if (!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true) {
 									}
 									?>
 
-									<li><a href="#"><i class="ti-heart"></i>Saved Courses</a></li>
 									<li class="dropdown">
 
 										<ul class="nav nav-second-level">
@@ -156,9 +155,7 @@ if (!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true) {
 											<li><a href="javascript:void(0);">In Draft</a></li>
 										</ul>
 									</li>
-									<li><a href="#"><i class="ti-shopping-cart"></i>My Order</a></li>
 									<li class="active"><a href="settings.php"><i class="ti-settings"></i>Settings</a></li>
-									<li><a href="#"><i class="ti-comment-alt"></i>Reviews</a></li>
 									<li><a href="../backend/userController/logoutUser.php"><i class="ti-power-off"></i>Log Out</a></li>
 								</ul>
 							</div>
