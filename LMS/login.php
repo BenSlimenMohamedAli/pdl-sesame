@@ -40,7 +40,7 @@ require_once '../backend/config.php';
 						<div class="col-lg-11 col-md-11">
 						
 							<div class="row no-gutters position-relative log_rads">
-								<div class="col-lg-6 col-md-5 bg-cover" style="background:#1f2431 url(assets/img/log.png)no-repeat;">
+								<div class="col-lg-6 col-md-5 bg-cover" style="background:#1f2431 url(assets/img/)no-repeat;">
 									<div class="lui_9okt6">
 										<div class="_loh_revu97">
 											<div id="reviews-login">
