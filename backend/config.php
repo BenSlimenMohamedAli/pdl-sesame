@@ -1,9 +1,9 @@
 <?php
 session_start();
-$host='localhost';
-$db = 'tekup';
+$host='mysql-server';
+$db = 'sesame';
 $username = 'root';
-$password = '';
+$password = 'pdlsesameTEAM2023';
 
 try {
     $dsn = "mysql:host=$host;dbname=$db";

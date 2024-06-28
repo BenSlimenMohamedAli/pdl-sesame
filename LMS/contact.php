@@ -234,7 +234,7 @@ require_once '../backend/config.php';
 											</div>
 											<div class="cn-info-content">
 												<h4 class="cn-info-title">Drop A Mail</h4>
-												support@SESAME.de<br>info@SESAME.de
+												support@sesame.com.tn<br>info@sesame.com.tn
 											</div>
 										</div>
 										
@@ -298,7 +298,7 @@ require_once '../backend/config.php';
 										<p>Z.I Chotrana II Pôle Technologique Elgazala
 											2088 Ariana, Tunisie.</p>
 										<p>+216 12-345-678</p>
-										<p>info@SESAME.de</p>
+										<p>info@sesame.com.tn</p>
 									</div>
 								</div>
 							</div>

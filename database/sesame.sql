@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `tekup`
+-- Database: `sesame`
 --
 
 -- --------------------------------------------------------
@@ -90,8 +90,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `firstname`, `lastname`, `phone`, `email`, `password`, `image`, `role`) VALUES
-(29, 'ghaith', 'zghidi', '27456520', 'zghidig@tek-up.de', '$2y$10$uaHdIDQZAZQnCql6POJcU.MciovPxqFVLaXW5CxF0/2Ke6HRFc4g6', '1853ba02e4bc060fb2844d5c452ce927.jpeg', '1'),
-(30, 'Michael', 'Barnhart', '6164336313', 'gmail@tek-up.de', '$2y$10$jVq4c97LIdREwE0EpL3p7.TZms9H6tlxYdixDNPIEkr4Z2t.7/Kpm', '210684aab2d3a3e6f664208d512ce219.jpeg', '0');
+(29, 'ghaith', 'zghidi', '27456520', 'zghidig@sesame.com.tn', '$2y$10$uaHdIDQZAZQnCql6POJcU.MciovPxqFVLaXW5CxF0/2Ke6HRFc4g6', '1853ba02e4bc060fb2844d5c452ce927.jpeg', '1'),
+(30, 'Michael', 'Barnhart', '6164336313', 'gmail@sesame.com.tn', '$2y$10$jVq4c97LIdREwE0EpL3p7.TZms9H6tlxYdixDNPIEkr4Z2t.7/Kpm', '210684aab2d3a3e6f664208d512ce219.jpeg', '0');
 
 --
 -- Indexes for dumped tables

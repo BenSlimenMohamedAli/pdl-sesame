@@ -1,0 +1,47 @@
+version: "3.7"
+services:
+  frontend:
+    build:
+      dockerfile: configurations/php.Dockerfile
+      context: .
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - "./:/var/www/html/"
+      - "./configurations/apache2/dev.frontend.conf:/etc/apache2/sites-available/000-default.conf"
+      - ./configurations/php.ini:/usr/local/etc/php/php.ini
+    networks:
+      - pdlsesamenetwork
+    environment:
+      - VIRTUAL_HOST=pdlsesame.localhost
+
+  mysql-server:
+    platform: linux/x86_64
+    image: mysql:8.0.19
+    restart: always
+    command: [--max-allowed-packet=67108864]
+    environment:
+      MYSQL_ROOT_PASSWORD: pdlsesameTEAM2023 # development password, the production password will be different
+    volumes:
+      - "./mysql-data:/var/lib/mysql"
+    networks:
+      - pdlsesamenetwork
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.0.1
+    restart: always
+    environment:
+      PMA_HOST: mysql-server
+      PMA_ARBITRARY: 1
+      UPLOAD_LIMIT: 300M
+    depends_on:
+      - mysql-server
+    ports:
+      - "4000:80"
+    networks:
+      - pdlsesamenetwork
+
+networks:
+  pdlsesamenetwork:

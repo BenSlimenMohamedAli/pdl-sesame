@@ -290,7 +290,7 @@ $query = $conn->query("SELECT * FROM courses WHERE course_category = '$category'
 										<p>Z.I Chotrana II Pôle Technologique Elgazala
 											2088 Ariana, Tunisie.</p>
 										<p>+216 12-345-678</p>
-										<p>info@Tek-up.de</p>
+										<p>info@sesame.com.tn</p>
 									</div>
 								</div>
 							</div>
@@ -343,7 +343,7 @@ $query = $conn->query("SELECT * FROM courses WHERE course_category = '$category'
 						<div class="row align-items-center">
 							
 							<div class="col-lg-6 col-md-6">
-								<p class="mb-0">© 2022 Tek-up LMS. Designd By <a href="">TEKUPERZ</a>.</p>
+								<p class="mb-0">© 2022 sesame LMS. Designd By <a href="">SESAMEERZ</a>.</p>
 							</div>
 							
 							<div class="col-lg-6 col-md-6 text-right">

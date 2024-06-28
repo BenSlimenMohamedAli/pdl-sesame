@@ -14,7 +14,7 @@ if (!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true) {
 	<meta name="author" content="www.frebsite.nl" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<title>TEK-UP - Online Course & Education</title>
+	<title>SESAME - Online Course & Education</title>
 
 	<!-- Custom CSS -->
 	<link href="assets/css/styles.css" rel="stylesheet">
@@ -307,7 +307,7 @@ if (!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true) {
 									<p>Z.I Chotrana II Pôle Technologique Elgazala
 										2088 Ariana, Tunisie.</p>
 									<p>+216 12-345-678</p>
-									<p>info@Tek-up.de</p>
+									<p>info@sesame.com.tn</p>
 								</div>
 							</div>
 						</div>
@@ -360,7 +360,7 @@ if (!(isset($_SESSION['logged'])) || $_SESSION['logged'] != true) {
 					<div class="row align-items-center">
 
 						<div class="col-lg-6 col-md-6">
-							<p class="mb-0">© 2022 Tek-up LMS. Designd By <a href="">TEKUPERZ</a>.</p>
+							<p class="mb-0">© 2022 sesame LMS. Designd By <a href="">SESAMEERZ</a>.</p>
 						</div>
 
 						<div class="col-lg-6 col-md-6 text-right">

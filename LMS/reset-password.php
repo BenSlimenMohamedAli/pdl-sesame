@@ -11,7 +11,7 @@ require_once '../backend/config.php';
     <meta name="author" content="www.frebsite.nl" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>TEK-UP - Online Course & Education</title>
+    <title>SESAME - Online Course & Education</title>
 
     <!-- Custom CSS -->
     <link href="assets/css/styles.css" rel="stylesheet">
