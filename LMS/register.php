@@ -10,7 +10,7 @@ require_once '../backend/config.php';
 		<meta name="author" content="www.frebsite.nl" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		
-        <title>TEK-UP - Online Course & Education</title>
+        <title>SESAME - Online Course & Education</title>
 		 
         <!-- Custom CSS -->
         <link href="assets/css/styles.css" rel="stylesheet">
@@ -40,7 +40,7 @@ require_once '../backend/config.php';
 						<div class="col-lg-11 col-md-11">
 						
 							<div class="row no-gutters position-relative log_rads">
-								<div class="col-lg-6 col-md-5 bg-cover" style="background:#1f2431 url(assets/img/log.png)no-repeat;">
+								<div class="col-lg-6 col-md-5 bg-cover" style="background:#1f2431 no-repeat;">
 									<div class="lui_9okt6">
 										<div class="_loh_revu97">
 											<div id="reviews-login">

@@ -10,7 +10,7 @@ require_once '../backend/config.php';
 		<meta name="author" content="www.frebsite.nl" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		
-        <title>TEK-UP - Online Course & Education</title>
+        <title>SESAME - Online Course & Education</title>
 		 
         <!-- Custom CSS -->
         <link href="assets/css/styles.css" rel="stylesheet">
@@ -162,16 +162,16 @@ require_once '../backend/config.php';
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12">
 						
-							<div class="four_slide-dots articles arrow_middle">
-								
+							<div class="four_slide-dots articles arrow_middle" style="margin-left:250px">
+							
 								<!-- Single Slide -->
 								<div class="singles_items">
 									<div class="instructor_wrap">
 										<div class="instructor_thumb">
-											<a href="#"><img src="assets/img/user.jpg" class="img-fluid" alt=""></a>
+											<a href="#"><img src="assets/img/user-1.jpg" class="img-fluid" alt=""></a>
 										</div>
 										<div class="instructor_caption">
-											<h4><a href="#">Yassine Karrech</a></h4>
+											<h4><a href="#">Ferid Belgaid</a></h4>
 											<span>Web Designer</span>
 											<ul>
 												<li><a href="#" class="cl-fb"><i class="ti-facebook"></i></a></li>
@@ -185,7 +185,7 @@ require_once '../backend/config.php';
 								<div class="singles_items">
 									<div class="instructor_wrap">
 										<div class="instructor_thumb">
-											<a href="#"><img src="assets/img/user.jpg" class="img-fluid" alt=""></a>
+											<a href="#"><img src="assets/img/user-3.jpg" class="img-fluid" alt=""></a>
 										</div>
 										<div class="instructor_caption">
 											<h4><a href="#">Ghaith Zghidi</a></h4>
@@ -199,47 +199,18 @@ require_once '../backend/config.php';
 									</div>
 								</div>
 								<!-- Single Slide -->
-								<div class="singles_items">
-									<div class="instructor_wrap">
-										<div class="instructor_thumb">
-											<a href="#"><img src="assets/img/user.jpg" class="img-fluid" alt=""></a>
-										</div>
-										<div class="instructor_caption">
-											<h4><a href="#">Hakim Mahmoud</a></h4>
-											<span>Project Manager</span>
-											<ul>
-												<li><a href="#" class="cl-fb"><i class="ti-facebook"></i></a></li>
-												<li><a href="#" class="cl-twitter"><i class="ti-twitter"></i></a></li>
-												<li><a href="#" class="cl-linked"><i class="ti-linkedin"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
+								
+								<!-- Single Slide -->
+								
 								<!-- Single Slide -->
 								<div class="singles_items">
 									<div class="instructor_wrap">
 										<div class="instructor_thumb">
-											<a href="#"><img src="assets/img/user.jpg" class="img-fluid" alt=""></a>
+											<a href="#"><img src="assets/img/user-5.jpg" class="img-fluid" alt=""></a>
 										</div>
 										<div class="instructor_caption">
-											<h4><a href="#">Hanine Bousetta</a></h4>
-											<span>Web Designer</span>
-											<ul>
-												<li><a href="#" class="cl-fb"><i class="ti-facebook"></i></a></li>
-												<li><a href="#" class="cl-twitter"><i class="ti-twitter"></i></a></li>
-												<li><a href="#" class="cl-linked"><i class="ti-linkedin"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<!-- Single Slide -->
-								<div class="singles_items">
-									<div class="instructor_wrap">
-										<div class="instructor_thumb">
-											<a href="#"><img src="assets/img/user.jpg" class="img-fluid" alt=""></a>
-										</div>
-										<div class="instructor_caption">
-											<h4><a href="#">Yosra Wannen</a></h4>
+											<h4><a href="#">Mohamed Ali Slimen
+											</a></h4>
 											<span>Web Developer</span>
 											<ul>
 												<li><a href="#" class="cl-fb"><i class="ti-facebook"></i></a></li>
@@ -281,7 +252,7 @@ require_once '../backend/config.php';
 								<div class="testimonial-detail">
 									<div class="client-detail-box">
 										<div class="pic">
-											<img src="assets/img/user.jpg" alt="">
+											<img src="assets/img/user-1.jpg" alt="">
 										</div>
 										<div class="client-detail">
 											<h3 class="testimonial-title">Yassine Karrech</h3>
@@ -308,36 +279,9 @@ require_once '../backend/config.php';
 									</p>
 								</div>
 								
-								<div class="testimonial-detail">
-									<div class="client-detail-box">
-										<div class="pic">
-											<img src="assets/img/user.jpg" alt="">
-										</div>
-										<div class="client-detail">
-											<h3 class="testimonial-title">Hakim Mahmoud</h3>
-											<span class="post">Web Designer</span>
-										</div>
-									</div>
-									<p class="description">
-										" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi facilis itaque minus non odio, quaerat ullam unde voluptatum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi."
-									</p>
-								</div>
 								
-								<div class="testimonial-detail">
-									<div class="client-detail-box">
-										<div class="pic">
-											<img src="assets/img/user.jpg" alt="">
-										</div>
-										<div class="client-detail">
-											<h3 class="testimonial-title">Hanine Bousetta</h3>
-											<span class="post">Web Developer</span>
-										</div>
-									</div>
-									<p class="description">
-										" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi facilis itaque minus non odio, quaerat ullam unde voluptatum eligendi facilis itaque minus non odio, quaerat ullam unde ? "
-									</p>
-								</div>
-
+								
+								
 								<div class="testimonial-detail">
 									<div class="client-detail-box">
 										<div class="pic">
@@ -396,7 +340,7 @@ require_once '../backend/config.php';
 							<p>Z.I Chotrana II Pôle Technologique Elgazala
 								2088 Ariana, Tunisie.</p>
 							<p>+216 12-345-678</p>
-							<p>info@Tek-up.de</p>
+							<p>info@SESAME.de</p>
 						</div>
 					</div>
 				</div>
@@ -449,7 +393,7 @@ require_once '../backend/config.php';
 			<div class="row align-items-center">
 				
 				<div class="col-lg-6 col-md-6">
-					<p class="mb-0">© 2022 Tek-up LMS. Designd By <a href="">TEKUPERZ</a>.</p>
+					<p class="mb-0">© 2022 SESAME LMS. Designd By <a href="">TEKUPERZ</a>.</p>
 				</div>
 				
 				<div class="col-lg-6 col-md-6 text-right">
