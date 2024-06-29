@@ -190,7 +190,7 @@ require_once '../backend/config.php';
 										<ul class="no-ul-list mb-3">
 											<li>
 												<input id="a-1" class="checkbox-custom" name="a-1" type="checkbox">
-												<label for="a-1" class="checkbox-custom-label">Yassine Karrech (14)</label>
+												<label for="a-1" class="checkbox-custom-label">Ghaith Zghidi (14)</label>
 											</li>
 											<li>
 												<input id="a-2" class="checkbox-custom" name="a-2" type="checkbox">

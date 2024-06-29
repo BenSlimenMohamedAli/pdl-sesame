@@ -255,7 +255,7 @@ require_once '../backend/config.php';
 										<div class="education_block_footer">
 											<div class="education_block_author">
 												<div class="path-img"><a href="instructor-detail.html"><img src="assets/img/user.jpg" class="img-fluid" alt=""></a></div>
-												<h5><a href="instructor-detail.html">Yassine Karrech</a></h5>
+												<h5><a href="instructor-detail.html">Ghaith Zghidi</a></h5>
 											</div>
 											<div class="foot_lecture"><i class="ti-control-skip-forward mr-2"></i>54 lectures</div>
 										</div>
@@ -285,7 +285,7 @@ require_once '../backend/config.php';
 										<div class="education_block_footer">
 											<div class="education_block_author">
 												<div class="path-img"><a href="instructor-detail.html"><img src="assets/img/user.jpg" class="img-fluid" alt=""></a></div>
-												<h5><a href="instructor-detail.html">Yassine Karrech</a></h5>
+												<h5><a href="instructor-detail.html">Ghaith Zghidi</a></h5>
 											</div>
 											<div class="foot_lecture"><i class="ti-control-skip-forward mr-2"></i>26 lectures</div>
 										</div>
@@ -315,7 +315,7 @@ require_once '../backend/config.php';
 										<div class="education_block_footer">
 											<div class="education_block_author">
 												<div class="path-img"><a href="instructor-detail.html"><img src="assets/img/user.jpg" class="img-fluid" alt=""></a></div>
-												<h5><a href="instructor-detail.html">Yassine Karrech</a></h5>
+												<h5><a href="instructor-detail.html">Ghaith Zghidi</a></h5>
 											</div>
 											<div class="foot_lecture"><i class="ti-control-skip-forward mr-2"></i>52 lectures</div>
 										</div>
@@ -345,7 +345,7 @@ require_once '../backend/config.php';
 										<div class="education_block_footer">
 											<div class="education_block_author">
 												<div class="path-img"><a href="instructor-detail.html"><img src="assets/img/user.jpg" class="img-fluid" alt=""></a></div>
-												<h5><a href="instructor-detail.html">Yassine Karrech</a></h5>
+												<h5><a href="instructor-detail.html">Ghaith Zghidi</a></h5>
 											</div>
 											<div class="foot_lecture"><i class="ti-control-skip-forward mr-2"></i>52 lectures</div>
 										</div>
@@ -375,7 +375,7 @@ require_once '../backend/config.php';
 										<div class="education_block_footer">
 											<div class="education_block_author">
 												<div class="path-img"><a href="instructor-detail.html"><img src="assets/img/user.jpg" class="img-fluid" alt=""></a></div>
-												<h5><a href="instructor-detail.html">Yassine Karrech</a></h5>
+												<h5><a href="instructor-detail.html">Ghaith Zghidi</a></h5>
 											</div>
 											<div class="foot_lecture"><i class="ti-control-skip-forward mr-2"></i>32 lectures</div>
 										</div>
@@ -405,7 +405,7 @@ require_once '../backend/config.php';
 										<div class="education_block_footer">
 											<div class="education_block_author">
 												<div class="path-img"><a href="instructor-detail.html"><img src="assets/img/user.jpg" class="img-fluid" alt=""></a></div>
-												<h5><a href="instructor-detail.html">Yassine Karrech</a></h5>
+												<h5><a href="instructor-detail.html">Ghaith Zghidi</a></h5>
 											</div>
 											<div class="foot_lecture"><i class="ti-control-skip-forward mr-2"></i>48 lectures</div>
 										</div>

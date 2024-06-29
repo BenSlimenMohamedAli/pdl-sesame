@@ -255,7 +255,7 @@ require_once '../backend/config.php';
 											<img src="assets/img/user-1.jpg" alt="">
 										</div>
 										<div class="client-detail">
-											<h3 class="testimonial-title">Yassine Karrech</h3>
+											<h3 class="testimonial-title">Ghaith Zghidi</h3>
 											<span class="post">Web Developer</span>
 										</div>
 									</div>

@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `sesame`
+-- Database: `pdl`
 --
 
 -- --------------------------------------------------------
@@ -40,7 +40,7 @@ CREATE TABLE `contacts` (
 --
 
 INSERT INTO `contacts` (`contact_id`, `name`, `email`, `subject`, `message`) VALUES
-(8, 'Michael Barnhart', 'zghidig@gmail.com', 'topnet', 'daadadadadadada');
+(8, 'Michael Jordan', 'jordan@gmail.com', 'topnet', 'daadadadadadada');
 
 -- --------------------------------------------------------
 
@@ -64,9 +64,9 @@ CREATE TABLE `courses` (
 --
 
 INSERT INTO `courses` (`course_id`, `course_title`, `course_owner`, `course_duration`, `course_category`, `course_description`, `image`, `video`) VALUES
-(19, 'PHP', 'ghaith zghidi', '120', 'Develepment', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'daf39584bf35399655986b8c58195f8a.png', 'daf39584bf35399655986b8c58195f8a.mp4'),
-(22, 'NodeJS', 'Yassine Karrech', '60', 'Develepment', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '67f9d7c24be59bf591ff4b1387dccb74.png', '67f9d7c24be59bf591ff4b1387dccb74.mp4'),
-(23, 'RHCP', 'Hannine Bousetta', '420', 'Security', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '31a4583073cefdccefac1c70c69ae4a1.jpeg', '31a4583073cefdccefac1c70c69ae4a1.mp4');
+(19, 'PHP', 'Ghaith Zghidi', '120', 'Develepment', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'daf39584bf35399655986b8c58195f8a.png', 'daf39584bf35399655986b8c58195f8a.mp4'),
+(22, 'NodeJS', 'Farid Belgaid', '60', 'Develepment', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '67f9d7c24be59bf591ff4b1387dccb74.png', '67f9d7c24be59bf591ff4b1387dccb74.mp4'),
+(23, 'RHCP', 'Mohamed Ali Ben Slimen', '420', 'Security', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '31a4583073cefdccefac1c70c69ae4a1.jpeg', '31a4583073cefdccefac1c70c69ae4a1.mp4');
 
 -- --------------------------------------------------------
 
@@ -90,8 +90,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `firstname`, `lastname`, `phone`, `email`, `password`, `image`, `role`) VALUES
-(29, 'ghaith', 'zghidi', '27456520', 'zghidig@sesame.com.tn', '$2y$10$uaHdIDQZAZQnCql6POJcU.MciovPxqFVLaXW5CxF0/2Ke6HRFc4g6', '1853ba02e4bc060fb2844d5c452ce927.jpeg', '1'),
-(30, 'Michael', 'Barnhart', '6164336313', 'gmail@sesame.com.tn', '$2y$10$jVq4c97LIdREwE0EpL3p7.TZms9H6tlxYdixDNPIEkr4Z2t.7/Kpm', '210684aab2d3a3e6f664208d512ce219.jpeg', '0');
+(29, 'ghaith', 'zghidi', '27456520', 'admin@sesame.com', '$2y$10$uaHdIDQZAZQnCql6POJcU.MciovPxqFVLaXW5CxF0/2Ke6HRFc4g6', '1853ba02e4bc060fb2844d5c452ce927.jpeg', '1'),
+(30, 'Michael', 'Jordan', '6164336313', 'gmail@sesame.com', '$2y$10$jVq4c97LIdREwE0EpL3p7.TZms9H6tlxYdixDNPIEkr4Z2t.7/Kpm', '210684aab2d3a3e6f664208d512ce219.jpeg', '0');
 
 --
 -- Indexes for dumped tables
